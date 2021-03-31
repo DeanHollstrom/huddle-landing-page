@@ -1,0 +1,141 @@
+/*  VARIABLES */
+:root {
+  --primary-color: hsl(257, 40%, 49%);
+  --secondary-color: hsl(300, 69%, 71%);
+  --tertiary-color: hsl(080, 100%, 99%);
+}
+
+/* BASE STYLES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bg-desktop.svg");
+  background-size: 84vmax;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+}
+
+/* TYPOGRAPHY */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: var(--tertiary-color);
+  font-size: 3rem;
+}
+
+p {
+  color: var(--tertiary-color);
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* LOGO POSITIONING */
+.logo {
+  margin-top: 65px;
+  margin-left: 80px;
+}
+
+/* MAIN CONTENT */
+section {
+  display: flex;
+}
+.mockup-img {
+  margin-top: 100px;
+  margin-left: 80px;
+  width: 40%;
+}
+
+.content {
+  padding-top: 50px;
+  padding-left: 60px;
+  max-width: 45%;
+}
+
+button {
+  margin-top: 30px;
+  height: 55px;
+  width: 200px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  transition: 0.5s;
+}
+
+button:hover {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+h1 {
+  padding: 60px 0 20px 0;
+}
+
+.social-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 27px;
+  margin-right: 100px;
+  margin-top: 60px;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  padding: 0 15px;
+}
+
+span {
+  color: var(--tertiary-color);
+  transition: 0.5s;
+}
+
+span:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* FOOTER ATTRIBUTION STYLING */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  color: rgba(1, 1, 1, 0.3);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+}
